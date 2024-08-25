@@ -43,25 +43,29 @@
     }
   }
 
-  
 
-  @media screen and (min-width: 1200px) {
-    padding: 200px 0;
 
+
+
+  @media screen and (min-width: 1100px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url("../../images/hero/Img.Bg.jpg");
+      url("../../images/hero/hero-deskop@1x.jpg");
 
     @media screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url("../../images/hero/Img.Bg.jpg");
+        url("..//../images/hero/hero_tablet@2x.jpg");
     }
-   }
+  }
+
+
+  
+
 }
 
 .hero__slogan {
