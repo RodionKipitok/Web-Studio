@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  height: 38px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  color: #212121;
+  background-color: #f5f4fa;
+  cursor: pointer;
+  border-style: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: $PrimaryColor;
+  }
+}
+
+.list-filters-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  /* // Устройства X-Small (портретные телефоны, менее 576 пикселей) */
+
+  @media screen and (max-width: 575.98px) {
+    flex-wrap: wrap;
+  }
+  .filters-btn__item {
+    margin-top: 5px;
+  }
+  .filters-btn__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

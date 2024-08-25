@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none; /* Убираем маркеры */
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//  .conteiner {
+// 	width: 1200px;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	padding-left: 15px;
+// 	padding-right: 15px;
+//  }
+
+.conteiner {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+
+  //   @media screen and (min-width: 320px) and (max-width: 480px) {
+  //     min-width: 320px;
+  //     max-width: 480px;
+  //     width: 100%;
+  //   }
+
+  //   @media screen and (min-width: 481px) and (max-width: 768px) {
+  //     min-width: 481px;
+  //     max-width: 768px;
+  //   }
+
+  //   @media screen and (min-width: 769px) {
+  //     min-width: 769px;
+  //     max-width: 1200px;
+  //   }
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.current {
+  position: relative;
+  color: #2196f3;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  // left: 0;
+  // bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+}

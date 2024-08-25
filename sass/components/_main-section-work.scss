@@ -1,0 +1,83 @@
+/* Секция чем мі занимаемся  */
+
+
+.section-us-work{
+
+
+
+@media screen and (min-width:320px) {
+
+	display: none;
+	
+}
+
+@media screen and (min-width:1200px)  {
+
+	display: block;
+   margin-bottom: 94px;
+	
+  }
+
+ }
+
+
+
+
+
+.section-us-work__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 0.85;
+ 
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+ }
+
+
+.li-img-work {
+  
+	display: flex;
+ 
+	justify-content:space-evenly;
+ }
+
+ .pedestal-img{
+	position: relative;
+ }
+
+ .pedestal-img__img-work{
+  
+	margin-top: 50px;
+	
+ }
+
+
+ 
+ .section-us-work__heading{
+ position: absolute;
+ bottom: 0;
+  
+ width: 100%;
+ height: 70px;
+ padding-top: 27px;
+ padding-bottom: 27px;
+
+ font-family: 'Roboto';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 16px;
+ text-align: center;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ 
+ color: #FFFFFF;
+ background-color: rgba(47, 48, 58, 0.8);;
+ }
+ 
+
+ 
+ 
+ 
+ 

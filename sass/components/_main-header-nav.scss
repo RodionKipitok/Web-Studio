@@ -1,0 +1,167 @@
+.open {
+  display: flex !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+
+
+
+.nav {
+  display: flex;
+  width: 100%;
+}
+
+.nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    color: $PrimaryColor;
+  }
+}
+
+.nav .nav__list-link-pages {
+  margin-left: 85px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list-contacts {
+  margin-left: 50px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+.nav__list-contacts li {
+  margin-left: 10px;
+}
+
+.nav__contact {
+  display: flex;
+  align-items: center;
+  color: #757575;
+  fill: currentColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #141414;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #141414;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+/* // Устройства X-Small (портретные телефоны, менее 576 пикселей) */
+
+@media (max-width: 575.98px) {
+  .header {
+    justify-content: space-between;
+  }
+}
+
+/* // Устройства Medium (планшеты, менее 992 пикселей) */
+
+@media (max-width: 991.98px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+
+    padding: 50px 40px;
+    background-color: #fff;
+    border-top: 1px solid #141414;
+    animation: burgerAnimation 0.4s;
+  }
+
+  .nav .nav__list-link-pages {
+    margin-left: 62px;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .nav .nav__list-contacts {
+    margin-top: 20px;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* // Устройства Large (настольные компьютеры, менее 1200 пикселей) */
+
+@media (max-width: 1199.98px) {
+}

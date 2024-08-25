@@ -1,0 +1,98 @@
+/* Контакты */
+
+// drop-up window properties
+
+.contact-list {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+  }
+
+  @media screen and (min-width: 769px) {
+  }
+
+  .contact-item__email {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+    }
+  }
+
+  .contact-item {
+    @media screen and (min-width: 769px) {
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+    }
+  }
+}
+
+.contact-link {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+  }
+
+  .contact-link-header__icon-email {
+  }
+
+  .contact-link-header__icon-telephone {
+  }
+}
+
+.contact-link:hover {
+}
+
+.contact-link-telephon--big-size {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 34px;
+    line-height: 1.17;
+  }
+}
+
+.contact-link-email--big-size {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+.social-contact-list {
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    display: flex;
+    margin-top: 53px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-left: 96px;
+  }
+
+  .social-contact_item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .social-contact_link {
+      color: $PrimaryColor;
+
+      @media screen and (min-width: 481px) {
+        display: none;
+      }
+    }
+  }
+
+  .social-contact_item:last-child {
+  }
+
+  .social-contact_item:first-child {
+  }
+}
+
+//  /* Иконки контакты header */
+
+.contact-link-header__icon-email {
+  @media screen and (min-width: 481px) {
+  }
+}
+
+.contact-link-header__icon-telephone {
+  @media screen and (min-width: 481px) {
+  }
+}

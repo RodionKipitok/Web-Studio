@@ -1,0 +1,118 @@
+/* Секция приимущества  */
+
+.benefits-list {
+	display: block;
+   margin-top: 60px;
+
+
+   @media screen and (min-width:320px)and (max-width:767px){
+
+		display: block;
+		margin-top: 60px;
+		
+	  }
+	
+
+
+  @media screen and (min-width:768px){
+	display: flex;
+   justify-content: space-between;
+	flex-wrap: wrap;
+	
+  }
+
+
+
+
+  @media screen and (min-width:1200px){
+
+	display: flex;
+	margin-top: 94px;
+	margin-bottom: 94px;
+
+
+  }  
+
+ }
+ 
+ .benefits-list__item{
+	 
+	width: 100%;
+	&:not(:last-child){
+		 margin-bottom: 30px;
+	}
+
+	@media screen and (min-width:768px) and (max-width:1199px){
+		flex-basis: calc((100% - 4 * 15px)/2);
+		margin: 15px;
+	  }
+
+
+
+
+	@media screen and (min-width:1200px){
+		
+		width:calc((100% - 8*15px)/4);
+        margin:15px;
+	  }
+
+
+ }
+ 
+//  .benefits-list__item:not(:last-child) {
+// 	margin-left: 30px;
+//  }
+ 
+ .benefits__caption {
+	margin-bottom: 10px;
+ 
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	
+	text-transform: uppercase;
+	color: #212121;
+
+  @media screen and (min-width:320px) and (max-width:767px){
+
+     text-align: center;
+	
+  }
+  
+
+
+
+
+
+ }
+ 
+ .benefits__text {
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.74;
+	/* or 171% */
+ 
+	letter-spacing: 0.03em;
+ 
+	color: #757575;
+
+   // &:not(:last-child){
+   
+	// 	margin-bottom: 30px;
+
+	// }
+
+
+ }
+ 
+ .icon-box {
+	display: flex;
+ 
+	margin-bottom: 30px;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	background-color: #f5f4fa;
+ }
