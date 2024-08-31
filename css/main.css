@@ -1332,7 +1332,7 @@ a {
   width: 24px;
   height: 24px;
   margin-left: 12px;
-  background-image: url(../../images/icon-send.svg);
+  background-image: url("/images/icon-send.svg");
   background-repeat: no-repeat;
   background-size: cover;
   vertical-align: middle;
