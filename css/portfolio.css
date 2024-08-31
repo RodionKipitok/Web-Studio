@@ -722,8 +722,7 @@ a {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  /* border: 1px solid black; */
-  background-image: url("../../images/send.svg");
+  background-image: url("../../images/icon-send.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=portfolio.css.map */
