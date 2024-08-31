@@ -718,11 +718,11 @@ a {
 .footer-form__btn::after {
   content: "";
   display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
   width: 24px;
   height: 24px;
-  background-image: url("../../images/hero/hero_mobile@1x.jpg");
-  background-size: contain;
+  margin-left: 12px;
+  background-image: url(../../images/icon-send.svg);
   background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
 }/*# sourceMappingURL=portfolio.css.map */
